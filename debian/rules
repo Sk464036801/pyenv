@@ -6,3 +6,12 @@
 
 %:
 	dh $@ 
+
+override_dh_install:
+	PREFIX=$(PWD)/debian/pyenv/usr ./plugins/python-build/install.sh
+	mkdir -p debian/pyenv/usr/lib/pyenv/libexec
+	mv debian/pyenv/usr/bin/pyenv-* \
+	   debian/pyenv/usr/lib/pyenv/libexec
+
+get-orig-source:
+	uscan --download-current-version --force-download --rename

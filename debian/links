@@ -1,0 +1,4 @@
+usr/lib/pyenv/libexec/pyenv usr/bin/pyenv
+usr/lib/pyenv/plugins/python-build/bin/pyenv-install usr/bin/pyenv-install
+usr/lib/pyenv/plugins/python-build/bin/pyenv-uninstall usr/bin/pyenv-uninstall
+usr/lib/pyenv/plugins/python-build/bin/python-build usr/bin/python-build

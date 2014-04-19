@@ -1,15 +1,17 @@
 Source: pyenv
-Section: unknown
+Section: python
 Priority: optional
 Maintainer: Yamashita Yuu <peek824545201@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/pyenv.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/pyenv.git;a=summary
+Homepage: https://github.com/yyuu/pyenv
+Vcs-Git: git://github.com/yyuu/pyenv.git
+Vcs-Browser: https://github.com/yyuu/pyenv
 
 Package: pyenv
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, curl, build-essential, libssl-dev, zlib1g-dev
+Recommends: libbz2-dev, libreadline6-dev, libsqlite3-dev
+Suggests: autoconf, automake, libtool, git-core
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
