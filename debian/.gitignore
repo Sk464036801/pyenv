@@ -1,0 +1,7 @@
+*.swo
+*.swp
+/*.1
+/*.debhelper.log
+/files
+/pyenv
+/pyenv.substvars

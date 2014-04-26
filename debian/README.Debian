@@ -1,6 +1,47 @@
 pyenv for Debian
 ----------------
 
-<possible notes regarding this package - if none, delete this file>
+While python-build is a great tool to build Python versions that are not
+available via APT, you should still use the Debian-packaged versions
+of Python whenever possible since they are tested and supported by the
+Debian community.
 
- -- Yamashita Yuu <peek824545201@gmail.com>  Sat, 19 Apr 2014 17:15:32 +0900
+Please do not report bugs you encounter while using your homebuilt
+Pythons to the Debian team; Pythons built by yourself are not supported.
+
+That being said, the package dependencies/recommendations for
+python-build should be sufficient to get you going building regular
+releases of CPython.
+
+However, if you want to build prerelease CPython, Jython or
+PyPy, you will have to manually install the packages listed below.
+
+prerelease CPython
+----------------------
+
+If you want to build prerelease CPython, you might want to
+install python-build with "--install-suggests" or install the following
+packages manually:
+
+ - autoconf
+ - automake
+ - git-core
+ - libtool
+
+Jython
+-----
+
+If you're a Jython user, you should install a package that provides
+java6-runtime-headless or java6-runtime. Any of the following should
+do:
+
+ - openjdk-6-jre-headless
+ - openjdk-6-jre
+
+PyPy
+--------
+
+If you would like to use PyPy, you should install these packages:
+
+ - gcc
+ - python-all

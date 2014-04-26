@@ -13,5 +13,7 @@ Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, curl, build-essential, libssl-dev, zlib1g-dev
 Recommends: libbz2-dev, libreadline6-dev, libsqlite3-dev
 Suggests: autoconf, automake, libtool, git-core
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: simple per-user Python version manager
+ pyenv lets you easily switch between multiple versions of Python. It's
+ simple, unobtrusive, and follows the UNIX tradition of single-purpose
+ tools that do one thing well.
