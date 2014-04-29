@@ -2,7 +2,7 @@ Source: pyenv
 Section: python
 Priority: optional
 Maintainer: Yamashita Yuu <peek824545201@gmail.com>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), ruby-ronn
 Standards-Version: 3.9.4
 Homepage: https://github.com/yyuu/pyenv
 Vcs-Git: git://github.com/yyuu/pyenv.git
