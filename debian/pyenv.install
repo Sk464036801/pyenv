@@ -1,4 +1,4 @@
 libexec/* /usr/lib/pyenv/libexec
 completions/* /usr/lib/pyenv/completions
-plugins/python-build/bin /usr/lib/pyenv/plugins/python-build/bin
-plugins/python-build/share /usr/lib/pyenv/plugins/python-build/share
+plugins/python-build/bin /usr/lib/pyenv/plugins/python-build
+plugins/python-build/share /usr/lib/pyenv/plugins/python-build
