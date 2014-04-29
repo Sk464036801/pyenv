@@ -10,6 +10,8 @@ export DH_VERBOSE=1
 override_dh_auto_install:
 	mkdir -p debian/pyenv/usr/share/man/man1
 	ronn --roff --warnings debian/pyenv.1.ronn
+	ronn --roff --warnings debian/pyenv-install.1.ronn
+	ronn --roff --warnings debian/pyenv-uninstall.1.ronn
 	ronn --roff --warnings debian/python-build.1.ronn
 	dh_auto_install
 
