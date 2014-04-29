@@ -1,2 +1,3 @@
-libexec/*       /usr/lib/pyenv/libexec
-completions/*   /usr/lib/pyenv/completions
+libexec/*              /usr/lib/pyenv/libexec
+completions/*          /usr/lib/pyenv/completions
+plugins/python-build   /usr/lib/pyenv/plugins/python-build

@@ -10,16 +10,8 @@ export DH_VERBOSE=1
 override_dh_auto_install:
 	mkdir -p debian/pyenv/usr/share/man/man1
 	ronn --roff --warnings debian/pyenv.1.ronn
+	ronn --roff --warnings debian/python-build.1.ronn
 	dh_auto_install
-
-#override_dh_install:
-##	prefix.install "LICENSE", "README.md", "bin", "completions", "libexec"
-##	    prefix.install "plugins" => "default-plugins"
-#	PREFIX=$(PWD)/debian/pyenv/usr ./plugins/python-build/install.sh
-#	mkdir -p debian/pyenv/usr/lib/pyenv/libexec
-##	install -p libexec/* $(PWD)/debian/pyenv/usr/lib/pyenv/libexec
-#	mv debian/pyenv/usr/bin/pyenv-* \
-#	   debian/pyenv/usr/lib/pyenv/libexec
 
 get-orig-source:
 	uscan --download-current-version --force-download --rename
