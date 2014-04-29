@@ -3,12 +3,11 @@ Upstream-Name: pyenv
 Source: https://github.com/yyuu/pyenv
 
 Files: *
-Copyright: Copyright (c) 2013 Yamashita, Yuu
-           Copyright (c) 2013 Sam Stephenson
+Copyright: Copyright (c) 2014 Yamashita, Yuu
 License: MIT
 
 Files: debian/*
-Copyright: 2014 Yamashita Yuu <peek824545201@gmail.com>
+Copyright: Copyright (c) 2014 Yamashita Yuu <peek824545201@gmail.com>
 License: MIT
 
 License: MIT

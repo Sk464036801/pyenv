@@ -3,27 +3,43 @@ pyenv(1) -- Simple Python Version Management
 
 ## SYNOPSIS
 
-TODO
+`pyenv` <commands><br>
 
 ## DESCRIPTION
 
-TODO
-
-## OPTIONS
-
-TODO
+pyenv lets you easily switch between multiple versions of Python. It's
+simple, unobtrusive, and follows the UNIX tradition of single-purpose
+tools that do one thing well.
 
 ## EXAMPLES
 
-TODO
+Setup pyenv for bash/ksh/zsh:
 
-## ENVIRONMENT
+    $ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+    # restart oyur shell after this
 
-TODO
+Setup pyenv for fish:
+
+    > echo '. (pyenv init - | psub)' >> ~/.config/fish/config.fish
+    # restart oyur shell after this
+
+Switch between different Python interpreters:
+
+    $ pyenv global 3.4.0
+    $ python --version
+    Python 3.4.0
+    $ rbenv global system
+    $ python --version
+    Python 2.7.6
+
+The original pyenv README is available at /usr/share/doc/pyenv/README.md.gz
 
 ## AUTHORS
 
-TODO
+pyenv is developed by Yamashita, Yuu <<peek824545201@gmail.com>>,
+as a clone of rbenv and ruby-build, modified for Pythons.
+
+rbenv and ruby-build are developed by Sam Stephenson <<sam@37signals.com>>.
 
 ## SEE ALSO
 

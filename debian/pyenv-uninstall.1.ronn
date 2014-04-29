@@ -1,30 +1,28 @@
-pyenv-uninstall(1) -- Simple Python Version Management
+pyenv-uninstall(1) -- Uninstall a specific Python version
 ============================================
 
 ## SYNOPSIS
 
-TODO
+`pyenv uninstall` [`-f`|`--force`] <version><br>
 
 ## DESCRIPTION
 
-TODO
+Uninstall a specific Python version.
 
 ## OPTIONS
 
-TODO
-
-## EXAMPLES
-
-TODO
-
-## ENVIRONMENT
-
-TODO
+  * `-f`:
+    Attempt to remove the specified version without prompting
+    for confirmation. If the version does not exist, do not
+    display an error message.
 
 ## AUTHORS
 
-TODO
+pyenv is developed by Yamashita, Yuu <<peek824545201@gmail.com>>,
+as a clone of rbenv and ruby-build, modified for Pythons.
+
+rbenv and ruby-build are developed by Sam Stephenson <<sam@37signals.com>>.
 
 ## SEE ALSO
 
-pyenv(1)
+pyenv(1), pyenv-install(1)

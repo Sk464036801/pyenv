@@ -1,30 +1,49 @@
-pyenv-install(1) -- Simple Python Version Management
+pyenv-install(1) -- Install a Python version using python-build
 ============================================
 
 ## SYNOPSIS
 
-TODO
+`pyenv install` [`-f`] [`-kvp`] <version><br>
+`pyenv install` [`-f`] [`-kvp`] <definition-file><br>
+`pyenv install` [`-l`|`--list`]<br>
 
 ## DESCRIPTION
 
-TODO
+Install a Python version using python-build.
 
 ## OPTIONS
 
-TODO
+  * `-l`, `--list`:
+    List all available versions
 
-## EXAMPLES
+  * `-f`, `--force`:
+    Install even if the version appears to be installed already
 
-TODO
+  * `-s`, `--skip-existing`:
+    Skip if the version appears to be installed already
 
-## ENVIRONMENT
+python-build options:
 
-TODO
+  * `-k`, `--keep`:
+    Keep source tree in $PYENV_BUILD_ROOT after installation
+    (defaults to $PYENV_ROOT/sources)
+
+  * `-v`, `--verbose`:
+    Verbose mode: print compilation status to stdout
+
+  * `-p`, `--patch`:
+    Apply a patch from stdin before building
+
+  * `-g`, `--debug`:
+    Build a debug version
 
 ## AUTHORS
 
-TODO
+pyenv is developed by Yamashita, Yuu <<peek824545201@gmail.com>>,
+as a clone of rbenv and ruby-build, modified for Pythons.
+
+rbenv and ruby-build are developed by Sam Stephenson <<sam@37signals.com>>.
 
 ## SEE ALSO
 
-pyenv(1)
+pyenv(1), pyenv-uninstall(1), python-build(1)
