@@ -1,0 +1,2 @@
+libexec/*       /usr/lib/pyenv/libexec
+completions/*   /usr/lib/pyenv/completions
